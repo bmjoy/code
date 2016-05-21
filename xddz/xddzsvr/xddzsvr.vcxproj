@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3EF4F39C-4C88-4956-8CD2-E9CD0BFDD9D6}</ProjectGuid>
+    <RootNamespace>xddzsvr</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\bin\ddz\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./;../logic;../../misc;../../misc/tinyxml;../../misc/token;../../misc/mysql;../../misc/mysql/include;../../misc/socket_server_win;../protocol;../../../android/ll/Classes/ddzutil;../../public;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CARD_A_START;WIN32;_DEBUG;_CONSOLE;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libmysql.lib;../../misc/crul/libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../bin/ddz/$(ProjectName)d.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../misc/mysql/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>./;../logic;../../misc;../../misc/tinyxml;../../misc/token;../../misc/mysql;../../misc/mysql/include;../../misc/socket_server_win;../protocol;../../../android/ll/Classes/ddzutil;../../public;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CARD_A_START;WIN32;NDEBUG;_CONSOLE;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libmysql.lib;../../misc/crul/libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../bin/ddz/$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>../../misc/mysql/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\misc\crc32.cpp" />
+    <ClCompile Include="..\..\misc\crul\http_get_string.cpp" />
+    <ClCompile Include="..\logic\ai.cpp" />
+    <ClCompile Include="..\logic\card.cpp" />
+    <ClCompile Include="..\logic\convert .cpp" />
+    <ClCompile Include="..\logic\ddzai_strategies_call.cpp" />
+    <ClCompile Include="..\logic\stlmem.cpp" />
+    <ClCompile Include="..\logic\xxhash.c" />
+    <ClCompile Include="card_mission.cpp" />
+    <ClCompile Include="config_manager.cpp" />
+    <ClCompile Include="db_thread.cpp" />
+    <ClCompile Include="ddz_desk.cpp" />
+    <ClCompile Include="ddz_desk_sender.cpp" />
+    <ClCompile Include="game_main_thread.cpp" />
+    <ClCompile Include="game_room.cpp" />
+    <ClCompile Include="http_thread.cpp" />
+    <ClCompile Include="match_room.cpp" />
+    <ClCompile Include="mission.cpp" />
+    <ClCompile Include="ms_connector.cpp" />
+    <ClCompile Include="redis_thread.cpp" />
+    <ClCompile Include="server_frame.cpp" />
+    <ClCompile Include="socket_service.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="user_manager.cpp" />
+    <ClCompile Include="xddzsvr.cpp" />
+    <ClCompile Include="..\logic\ai_farmer_next.cpp" />
+    <ClCompile Include="..\logic\ai_farmer_pre.cpp" />
+    <ClCompile Include="..\logic\ai_helper.cpp" />
+    <ClCompile Include="..\logic\ai_lander.cpp" />
+    <ClCompile Include="..\logic\ddz_ai_strategies.cpp" />
+    <ClCompile Include="..\logic\mddz.cpp" />
+    <ClCompile Include="..\logic\mddz_util.cpp" />
+    <ClCompile Include="..\logic\mddzc.cpp" />
+    <ClCompile Include="..\logic\test_mddz.cpp" />
+    <ClCompile Include="..\..\misc\aes.cpp" />
+    <ClCompile Include="..\..\misc\base64.cpp" />
+    <ClCompile Include="..\..\misc\base_thread.cpp" />
+    <ClCompile Include="..\..\misc\block_buffer.cpp" />
+    <ClCompile Include="..\..\misc\cflog.cpp" />
+    <ClCompile Include="..\..\misc\md5.cpp" />
+    <ClCompile Include="..\..\misc\mem_leck_detector.cpp" />
+    <ClCompile Include="..\..\misc\myrandom.cpp" />
+    <ClCompile Include="..\..\misc\ring_buffer.cpp" />
+    <ClCompile Include="..\..\misc\ring_buffer2.cpp" />
+    <ClCompile Include="..\..\misc\ring_buffer_d.cpp" />
+    <ClCompile Include="..\..\misc\ring_buffer_d_thread.cpp" />
+    <ClCompile Include="..\..\misc\ring_buffer_thread.cpp" />
+    <ClCompile Include="..\..\misc\string_res.cpp" />
+    <ClCompile Include="..\..\misc\strtools.cpp" />
+    <ClCompile Include="..\..\misc\tcp_connecter.cpp" />
+    <ClCompile Include="..\..\misc\timer.cpp" />
+    <ClCompile Include="..\..\misc\u2g.cpp" />
+    <ClCompile Include="..\..\misc\util.cpp" />
+    <ClCompile Include="..\..\misc\win_dump.cpp" />
+    <ClCompile Include="..\..\misc\socket_server_win\listen_thread.cpp" />
+    <ClCompile Include="..\..\misc\socket_server_win\tcp_server_engine_win.cpp" />
+    <ClCompile Include="..\..\misc\socket_server_win\tcp_socket_item.cpp" />
+    <ClCompile Include="..\..\misc\tinyxml\tinystr.cpp" />
+    <ClCompile Include="..\..\misc\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="..\..\misc\tinyxml\tinyxml_tool.cpp" />
+    <ClCompile Include="..\..\misc\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\misc\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="..\..\misc\token\token2.cpp" />
+    <ClCompile Include="..\..\misc\mysql\connection.cpp" />
+    <ClCompile Include="..\..\misc\mysql\db_con_manager.cpp" />
+    <ClCompile Include="..\..\misc\mysql\record.cpp" />
+    <ClCompile Include="..\..\misc\redis\ctcp.cpp" />
+    <ClCompile Include="..\..\misc\redis\myredis.cpp" />
+    <ClCompile Include="..\..\misc\redis\myredis_pool.cpp" />
+    <ClCompile Include="ddz_desk_shuffle.cpp" />
+    <ClCompile Include="ddz_desk_card_mission.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\protocol\cpp\msprot.h" />
+    <ClInclude Include="..\..\misc\crc32.h" />
+    <ClInclude Include="..\..\misc\crul\http_get_string.h" />
+    <ClInclude Include="..\..\public\log_type.h" />
+    <ClInclude Include="..\logic\ai.h" />
+    <ClInclude Include="..\logic\card.h" />
+    <ClInclude Include="..\logic\convert.h" />
+    <ClInclude Include="..\logic\stlmem.h" />
+    <ClInclude Include="..\logic\xxhash.h" />
+    <ClInclude Include="card_mission.h" />
+    <ClInclude Include="config_manager.h" />
+    <ClInclude Include="db_thread.h" />
+    <ClInclude Include="ddz_def.h" />
+    <ClInclude Include="ddz_desk.h" />
+    <ClInclude Include="game_main_thread.h" />
+    <ClInclude Include="game_room.h" />
+    <ClInclude Include="game_user_def.h" />
+    <ClInclude Include="http_thread.h" />
+    <ClInclude Include="mission.h" />
+    <ClInclude Include="ms_connector.h" />
+    <ClInclude Include="redis_thread.h" />
+    <ClInclude Include="server_frame.h" />
+    <ClInclude Include="socket_service.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="user_manager.h" />
+    <ClInclude Include="..\logic\ai_helper.h" />
+    <ClInclude Include="..\logic\ddz_ai_strategies.h" />
+    <ClInclude Include="..\logic\mddz.h" />
+    <ClInclude Include="..\logic\mddz_util.h" />
+    <ClInclude Include="..\logic\mddzc.h" />
+    <ClInclude Include="..\logic\test_mddz.h" />
+    <ClInclude Include="..\..\misc\aes.h" />
+    <ClInclude Include="..\..\misc\base64.h" />
+    <ClInclude Include="..\..\misc\base_thread.h" />
+    <ClInclude Include="..\..\misc\binary.h" />
+    <ClInclude Include="..\..\misc\block_buffer.h" />
+    <ClInclude Include="..\..\misc\byte_stream.h" />
+    <ClInclude Include="..\..\misc\cflog.h" />
+    <ClInclude Include="..\..\misc\http_request.h" />
+    <ClInclude Include="..\..\misc\i_tcp_socket_engine.h" />
+    <ClInclude Include="..\..\misc\md5.h" />
+    <ClInclude Include="..\..\misc\mem_leck_detector.h" />
+    <ClInclude Include="..\..\misc\msg_object_base.h" />
+    <ClInclude Include="..\..\misc\mutex.h" />
+    <ClInclude Include="..\..\misc\myrandom.h" />
+    <ClInclude Include="..\..\misc\pptr_buffer.h" />
+    <ClInclude Include="..\..\misc\ring_buffer.h" />
+    <ClInclude Include="..\..\misc\ring_buffer2.h" />
+    <ClInclude Include="..\..\misc\ring_buffer2_thread.h" />
+    <ClInclude Include="..\..\misc\ring_buffer_d.h" />
+    <ClInclude Include="..\..\misc\ring_buffer_d_thread.h" />
+    <ClInclude Include="..\..\misc\ring_buffer_thread.h" />
+    <ClInclude Include="..\..\misc\safe_queue.h" />
+    <ClInclude Include="..\..\misc\singleton.h" />
+    <ClInclude Include="..\..\misc\stack_sort.h" />
+    <ClInclude Include="..\..\misc\string_res.h" />
+    <ClInclude Include="..\..\misc\strtools.h" />
+    <ClInclude Include="..\..\misc\tcp_connecter.h" />
+    <ClInclude Include="..\..\misc\timer.h" />
+    <ClInclude Include="..\..\misc\u2g.h" />
+    <ClInclude Include="..\..\misc\ustring.h" />
+    <ClInclude Include="..\..\misc\util.h" />
+    <ClInclude Include="..\..\misc\vector_helper.h" />
+    <ClInclude Include="..\..\misc\win_dump.h" />
+    <ClInclude Include="..\..\misc\socket_server_win\listen_thread.h" />
+    <ClInclude Include="..\..\misc\socket_server_win\tcp_server_engine_win.h" />
+    <ClInclude Include="..\..\misc\socket_server_win\tcp_socket_item.h" />
+    <ClInclude Include="..\..\misc\tinyxml\tinystr.h" />
+    <ClInclude Include="..\..\misc\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\..\misc\tinyxml\tinyxml_tool.h" />
+    <ClInclude Include="..\..\misc\token\token2.h" />
+    <ClInclude Include="..\..\misc\mysql\connection.h" />
+    <ClInclude Include="..\..\misc\mysql\db_con_manager.h" />
+    <ClInclude Include="..\..\misc\mysql\record.h" />
+    <ClInclude Include="..\..\misc\mysql\xmysql.h" />
+    <ClInclude Include="..\..\misc\redis\ctcp.h" />
+    <ClInclude Include="..\..\misc\redis\myredis.h" />
+    <ClInclude Include="..\..\misc\redis\myredis_def.h" />
+    <ClInclude Include="..\..\misc\redis\myredis_pool.h" />
+    <ClInclude Include="..\protocol\ddzprot.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

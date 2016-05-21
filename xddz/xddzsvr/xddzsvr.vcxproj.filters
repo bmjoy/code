@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="logic">
+      <UniqueIdentifier>{c4449fa4-515f-4404-b081-14de3121bde8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{88bc1dff-d7ff-4bc1-ae77-2c3af9a73d57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\socket">
+      <UniqueIdentifier>{2d23419c-bf6a-40d7-aab9-531218988272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\tinyxml">
+      <UniqueIdentifier>{02b999dd-5d5f-4f8b-9f22-9c0c5c5285e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\token">
+      <UniqueIdentifier>{2132b763-5933-4372-8b0a-8cf21ab8ae58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\mysql">
+      <UniqueIdentifier>{b5a2af07-28c3-40b7-89e9-ded728cb3b23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc\redis">
+      <UniqueIdentifier>{604b01af-8e08-4fa1-916c-6679e9312495}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{a2aa0d9d-e883-4981-b387-b213e44fea06}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="config_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ddz_desk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ddz_desk_sender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game_main_thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game_room.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mission.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="redis_thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="server_frame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="socket_service.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="user_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xddzsvr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\ai_farmer_next.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\ai_farmer_pre.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\ai_helper.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\ai_lander.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\ddz_ai_strategies.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\mddz.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\mddz_util.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\mddzc.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\test_mddz.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\aes.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\base64.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\base_thread.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\block_buffer.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\cflog.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\md5.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\mem_leck_detector.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\myrandom.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\ring_buffer.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\ring_buffer2.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\ring_buffer_d.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\ring_buffer_d_thread.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\ring_buffer_thread.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\string_res.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\strtools.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\tcp_connecter.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\timer.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\u2g.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\util.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\win_dump.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\socket_server_win\listen_thread.cpp">
+      <Filter>misc\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\socket_server_win\tcp_server_engine_win.cpp">
+      <Filter>misc\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\socket_server_win\tcp_socket_item.cpp">
+      <Filter>misc\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\tinyxml\tinystr.cpp">
+      <Filter>misc\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\tinyxml\tinyxml.cpp">
+      <Filter>misc\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\tinyxml\tinyxml_tool.cpp">
+      <Filter>misc\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\tinyxml\tinyxmlerror.cpp">
+      <Filter>misc\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\tinyxml\tinyxmlparser.cpp">
+      <Filter>misc\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\token\token2.cpp">
+      <Filter>misc\token</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\mysql\connection.cpp">
+      <Filter>misc\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\mysql\db_con_manager.cpp">
+      <Filter>misc\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\mysql\record.cpp">
+      <Filter>misc\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\redis\ctcp.cpp">
+      <Filter>misc\redis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\redis\myredis.cpp">
+      <Filter>misc\redis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\redis\myredis_pool.cpp">
+      <Filter>misc\redis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\ai.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\card.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\convert .cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\ddzai_strategies_call.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="match_room.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ms_connector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\stlmem.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\xxhash.c">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="ddz_desk_shuffle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="card_mission.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ddz_desk_card_mission.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\crul\http_get_string.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="http_thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\misc\crc32.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ddz_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ddz_desk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_main_thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_room.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_user_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mission.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="redis_thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="server_frame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="socket_service.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="user_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\ai_helper.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\ddz_ai_strategies.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\mddz.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\mddz_util.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\mddzc.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\test_mddz.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\aes.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\base64.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\base_thread.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\binary.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\block_buffer.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\byte_stream.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\cflog.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\http_request.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\i_tcp_socket_engine.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\md5.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\mem_leck_detector.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\msg_object_base.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\mutex.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\myrandom.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\pptr_buffer.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\ring_buffer.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\ring_buffer2.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\ring_buffer2_thread.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\ring_buffer_d.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\ring_buffer_d_thread.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\ring_buffer_thread.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\safe_queue.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\singleton.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\stack_sort.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\string_res.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\strtools.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\tcp_connecter.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\timer.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\u2g.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\ustring.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\util.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\vector_helper.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\win_dump.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\socket_server_win\listen_thread.h">
+      <Filter>misc\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\socket_server_win\tcp_server_engine_win.h">
+      <Filter>misc\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\socket_server_win\tcp_socket_item.h">
+      <Filter>misc\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\tinyxml\tinystr.h">
+      <Filter>misc\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\tinyxml\tinyxml.h">
+      <Filter>misc\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\tinyxml\tinyxml_tool.h">
+      <Filter>misc\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\token\token2.h">
+      <Filter>misc\token</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\mysql\connection.h">
+      <Filter>misc\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\mysql\db_con_manager.h">
+      <Filter>misc\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\mysql\record.h">
+      <Filter>misc\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\mysql\xmysql.h">
+      <Filter>misc\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\redis\ctcp.h">
+      <Filter>misc\redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\redis\myredis.h">
+      <Filter>misc\redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\redis\myredis_def.h">
+      <Filter>misc\redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\redis\myredis_pool.h">
+      <Filter>misc\redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\protocol\ddzprot.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\ai.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\card.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\convert.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\xxhash.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="ms_connector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\protocol\cpp\msprot.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\log_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\stlmem.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="card_mission.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\crul\http_get_string.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="http_thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\misc\crc32.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
